@@ -1,0 +1,81 @@
+@media only screen and (max-width: 599px) { 
+    #firstsmall{
+        margin: 7rem 1rem;
+    }
+    .mat-display-1{
+        text-align: center;
+    }
+
+    #lady{
+        width: 100%;
+        max-height: 40%;
+        display: block;
+    }
+}
+@media only screen and (min-width: 600px){
+    #first{
+        margin: 9.675rem 10.375rem;
+    }
+}
+
+
+*.mat-caption{
+      margin-top: -3.125rem;
+}
+.input{
+    background-color:#E9F4F5;
+   width:20rem ;
+   height: 3.125rem;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid #E9F4F5;
+}
+
+.input1{
+    background-color:#E9F4F5;
+    width:20rem ;
+    height: 3.125rem;
+     border-radius: 0.3125rem;
+    
+    border: 0.0625rem solid #E9F4F5;
+}
+
+.input2{
+    background-color:#E9F4F5;
+    width:20rem ;
+    height: 3.125rem;
+     border-radius: 0.3125rem;
+    border: 0.0625rem solid #E9F4F5;
+}
+
+.input3{
+    background-color:#E9F4F5;
+    width:20rem ;
+    height: 3.125rem;
+     border-radius: 0.3125rem;
+    border: 0.0625rem solid #E9F4F5;
+}
+
+.contact{
+    inline-size: 4.0625rem;
+}
+
+.container{
+    margin-left: 10%;
+}
+
+.logo1{
+    max-width:3.90625rem;
+    max-height:3.90625rem;
+    display: inline-block;
+}
+
+.vertical_center{
+    display: flex; 
+    align-items: center;
+}
+
+#lady{
+    max-width: 25rem;
+    max-height: 40%;
+    display: block;
+}

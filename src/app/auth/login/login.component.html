@@ -1,0 +1,222 @@
+<div fxHide.lt-md class="desktop">
+  <div class="container1">
+    <div fxLayout>
+      <div class="container">
+        <section class="top-left">
+          <section class="oval"></section>
+        </section>
+        <section class="heading">
+          Sign In to create<br />your free chatbot.
+        </section>
+        <br /><br /><br /><br />
+        <section class="font">
+          If you don't have an account <br />You can
+          <a class="a" href="/signup">Register here!</a>
+        </section>
+      </div>
+      <br />
+    </div>
+    <div class="bottom-left">
+      <img class="image" src="\assets\Images\Signup\signup.png" />
+    </div>
+    <div class="top-right">
+      <div style="padding-top: 50px">
+        <section>
+          <section class="form-card">
+            <form fxLayout="column" #form="ngForm" (ngSubmit)="onsignup(form)">
+              <div class="input-container">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="E-mail or Phone Number"
+                  name="email"
+                  ngModel
+                  required
+                  #emailinput="ngModel"
+                  style="width: 370px"
+                />
+              </div>
+
+              <div class="input-container">
+                <input
+                  class="input"
+                  [type]="type"
+                  placeholder="Password"
+                  name="password"
+                  ngModel
+                  required
+                  minlength="6"
+                  #password="ngModel"
+                /><mat-icon
+                  fxLayoutAlign="center center"
+                  (click)="show(type)"
+                  >{{ icon }}</mat-icon
+                >
+              </div>
+              <br />
+              <section
+                style="padding-inline-start: 245px; padding-bottom: 20px"
+              >
+                <a class="a1" href="/recovery" (click)="RecoveryPassword()"
+                  >Recovery Password</a
+                >
+              </section>
+              <button
+                class="btn"
+                type="submit"
+                color="primary"
+                [disabled]="form.invalid"
+              >
+                <a style="text-decoration: none; color: white" href="/login"
+                  >Sign Up</a
+                >
+              </button>
+            </form>
+            <section fxLayout="column" fxLayoutAlign="center center">
+              <section style="padding-top: 30px; padding-bottom: 20px">
+                <p>
+                  -----------------------Or continue with-----------------------
+                </p>
+              </section>
+              <section
+                fxLayout
+                fxLayoutAlign="center center"
+                fxLayoutGap="30px"
+              >
+                <section class="icon-card">
+                  <img
+                    (click)="googleSignIn()"
+                    fxLayout="column"
+                    fxLayoutAlign="center center"
+                    src="assets\Images\Signup\google.png"
+                  />
+                </section>
+                <section class="icon-card">
+                  <img
+                    fxLayoutAlign="center"
+                    src="assets\Images\Signup\apple.png"
+                  />
+                </section>
+                <section class="icon-card">
+                  <img
+                    fxLayoutAlign="center"
+                    src="assets\Images\Signup\facebook.png"
+                  />
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+<div fxHide.gt-md class="mobile">
+  <div fxLayout="column" fxLayoutAlign="center" fxLayoutGap="20px">
+    <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="80px">
+      <section style="padding-top: 200px; padding-left: 100px">
+        <section class="oval"></section>
+      </section>
+      <section class="heading" style="padding-top: 100px">
+        Sign In to create<br />your free chatbot.
+      </section>
+      <section class="font" style="padding-top: 150px">
+        If you don't have an account <br />You can
+        <a class="a" href="/signup">Register here!</a>
+      </section>
+    </div>
+    <section
+      class="bottom-left"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+    >
+      <img class="image" src="\assets\Images\Signup\signup.png" />
+    </section>
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <section>
+        <section class="form-card">
+          <form
+            fxLayout="column"
+            #form="ngForm"
+            (ngSubmit)="onsignup(form)"
+            fxLayout="column"
+            fxLayoutAlign="center center"
+          >
+            <div class="input-container">
+              <input
+                class="input"
+                type="text"
+                placeholder="E-mail or Phone Number"
+                name="email"
+                ngModel
+                required
+                #emailinput="ngModel"
+                style="width: 330px"
+              />
+            </div>
+            <br />
+            <div fxLayout class="input-container">
+              <input
+                class="input"
+                [type]="type"
+                placeholder="Password"
+                name="password"
+                ngModel
+                required
+                minlength="6"
+                #password="ngModel"
+              /><mat-icon fxLayoutAlign="center center" (click)="show(type)">{{
+                icon
+              }}</mat-icon>
+            </div>
+            <br />
+            <section style="padding-inline-start: 245px; padding-bottom: 20px">
+              <a class="a1" href="/recovery" (click)="RecoveryPassword()"
+                >Recovery Password</a
+              >
+            </section>
+            <button
+              class="btn"
+              type="submit"
+              color="primary"
+              [disabled]="form.invalid"
+            >
+              <a style="text-decoration: none; color: white" href="/login"
+                >Sign Up</a
+              >
+            </button>
+          </form>
+          <section fxLayout="column" fxLayoutAlign="center center">
+            <section style="padding-top: 30px; padding-bottom: 20px">
+              <p>
+                -----------------------Or continue with-----------------------
+              </p>
+            </section>
+            <section fxLayout fxLayoutAlign="center center" fxLayoutGap="30px">
+              <section class="icon-card">
+                <img
+                  (click)="googleSignIn()"
+                  fxLayout="column"
+                  fxLayoutAlign="center center"
+                  src="assets\Images\Signup\google.png"
+                />
+              </section>
+              <section class="icon-card">
+                <img
+                  fxLayoutAlign="center"
+                  src="assets\Images\Signup\apple.png"
+                />
+              </section>
+              <section class="icon-card">
+                <img
+                  fxLayoutAlign="center"
+                  src="assets\Images\Signup\facebook.png"
+                />
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </div>
+  </div>
+</div>

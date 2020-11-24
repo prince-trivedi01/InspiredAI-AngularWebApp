@@ -1,0 +1,67 @@
+<div *ngIf="!devicesm && !devicexs" class="bottom-panel">
+  <div class="logo"><img id="comp-logo" src="assets/logo.png"><span class="comp-name"> Inspired AI</span>
+  </div>
+  
+  <div class="rowleft">
+    <p class="det">Clean and commented code</p>
+    <p class="det">beautiful design and not really hard</p>
+    <p class="det">to work with.</p>
+
+    <p class="social">
+      <a href="https://www.facebook.com/inspiredai/" target="_blank"><img src='assets/fb.png' id="fb"></a>
+      <a href="https://in.linkedin.com/company/inspired-ai" target="_blank"><img src='assets/linkedin.png' id="l"></a>
+      <a href="mailto: contact@inspiredai.co"><img src='assets/gmail.png' id="g"></a>
+      <a href="https://twitter.com/InspiredAi" target="_blank"><img src='assets/twitter.png' id="tw"></a>
+      <a href="https://www.instagram.com/inspiredai/" target="_blank"><img src='assets/instagram.png' id="insta"></a>
+    </p>
+    <br>
+    <p class="copyright">© 2020 Inspired AI. All rights reserved.</p>
+  </div>
+  
+  <div class="row1">
+    
+    <a [routerLink]="['/privacy-policy']"><p class="btm">Privacy policy</p></a>
+    <a href="mailto: careers@inspiredai.co"><p class="btm">Jobs - <span style='color:#24C3A8'>We're hiring!</span></p></a>
+  </div>
+  
+  <div class="row2">
+    <a [routerLink]="['/contact-us']"><p class="btm">Contact Us</p></a>
+    <a href="mailto: contact@inspiredai.co"><p class="btm">Help Center</p></a>
+    <a [routerLink]="['/terms-and-conditions']"><p class="btm">Terms & conditions</p></a>
+  </div>
+  
+  <div class="row3">
+    <a [routerLink]="['/home']"><p class="btm">Home</p></a>
+    <a [routerLink]="['/solution']"><p class="btm">Solutions</p></a>
+    <!-- <p class="btm">Blogs</p> -->
+    <a [routerLink]="['/about-us']"><p class="btm">About Us</p></a>
+    
+  </div>
+
+</div>
+
+
+<div *ngIf="devicesm || devicexs" class="footer">
+  <div class="name-logo"><img id="comp-logo" src="assets/logo.png"><span class="comp-name"> Inspired AI</span></div>
+  <a [routerLink]="['/home']"><p class="tags">Home</p></a>
+  <a [routerLink]="['/solution']"><p class="tags">Solutions</p></a>
+  <a [routerLink]="['/about-us']"><p class="tags">About Us</p></a>
+  <!-- <p class="tags">Blogs</p> -->
+  <a [routerLink]="['/contact-us']"><p class="tags">Contact Us</p></a>
+  <a href="mailto: contact@inspiredai.co"><p class="tags">Help Centre</p></a>
+  <a [routerLink]="['/terms-and-conditions']"><p class="tags">Terms & Conditions</p></a>
+  <a [routerLink]="['/privacy-policy']"><p class="tags">Privacy Policy</p></a>
+  <a href="mailto: careers@inspiredai.co"><p class="tags">Jobs-<span style="color:#24C3A8;">We're hiring!</span></p></a>
+  <div class="social2">
+    <a href="https://www.facebook.com/inspiredai/" target="_blank"><img src='assets/fb.png' id="fb2"></a>
+    <a href="https://in.linkedin.com/company/inspired-ai" target="_blank"><img src='assets/linkedin.png' id="l2"></a>
+    <a href="mailto: contact@inspiredai.co"><img src='assets/gmail.png' id="g2"></a>
+    <a href="https://twitter.com/InspiredAi" target="_blank"><img src='assets/twitter.png' id="tw2"></a>
+    <a href="https://www.instagram.com/inspiredai/" target="_blank"><img src='assets/instagram.png' id="insta2"></a>
+  </div>
+  <p class="tags2">Clean and commented code</p>
+  <p class="tags2">beautiful design and not really hard</p>
+  <p class="tags2">to work with.</p>
+
+  <p class="copyright2">© 2020 Inspired AI. All rights reserved.</p>
+</div>

@@ -1,0 +1,159 @@
+.bottom-panel {
+    background-image: url(/assets/footer2.png);
+    width: 100%;
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    bottom: 0;
+    background-size: 100% 100%;
+}
+
+.row1,
+.row2,
+.row3 {
+    margin-top: 6%;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 100%;
+    width: fit-content;
+    float: right;
+}
+
+.btm {
+    text-align: left;
+    font-size: 24px;
+    font-family: roboto-regular;
+    margin-bottom: 48px;
+}
+
+.rowleft {
+    margin-top: 2%;
+    margin-left: 150px;
+    width: fit-content;
+    float: left;
+}
+
+.det {
+    text-align: left;
+    font-size: 16px;
+    font-family: roboto-regular;
+    margin-bottom: 10px;
+}
+
+#fb,
+#l,
+#g,
+#tw,
+#insta {
+    margin-top: 42px;
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin-right: 40px;
+}
+
+.social {
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.copyright {
+    text-align: left;
+    font-size: 20px;
+    bottom: 30px;;
+    color: grey;
+    font-family: roboto-regular;
+    margin-top: 100px;
+}
+
+.logo {
+    margin-left: 150px;
+    margin-top: 5%;
+}
+
+#comp-logo {
+    width: 65px;
+    height: 65px;
+}
+
+span{
+    vertical-align: middle;  
+    padding-left: 0.5em;
+}
+
+.comp-name{
+    font-size: 30px;
+    font-family: lustria;
+}
+
+// sm and xs screen
+.footer{
+    background-image: url(/assets/footer.jpg);
+    width: 100%;
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    bottom: 0;
+}
+
+.name-logo{
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40%;
+}
+
+.tags{
+    text-align: center;
+    font-family: roboto-regular;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.tags2{
+    text-align: center;
+    font-family: roboto-regular;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.social2{
+    margin-top: 8%;
+    margin-bottom: 8%;
+    width: 100%;
+    text-align: center;
+}
+
+#fb2,
+#l2,
+#g2,
+#tw2,
+#insta2 {
+    margin-top: 42px;
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.copyright2 {
+    text-align: center;
+    font-size: 20px;
+    bottom: 30px;;
+    color: grey;
+    font-family: roboto-regular;
+    margin-top: 80px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active{
+    color: black;
+    text-decoration: none;
+}

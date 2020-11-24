@@ -1,0 +1,27 @@
+<!--Header-->
+<mat-toolbar class="navbar">
+
+    <div class="vertical_center">
+        <a routerLink="/home" class="logo_link">
+            <img class="logo1" src="assets/logo.png">
+            <span> Inspired AI</span>
+        </a>
+    </div>
+
+    <div fxHide.gt-sm>
+        <button mat-icon-button (click)="onToggleSidenav()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+
+    <div fxHide.lt-md>
+        <a routerLink="/home" routerLinkActive="link2" class="mat-caption link">Home</a>
+        <a routerLink="/solution" routerLinkActive="link2" class="mat-caption link">Solutions</a>
+        <!--<a routerLink="/pricing" routerLinkActive="link2" class="mat-caption link">Pricing</a>-->
+        <!--<a routerLink="/blogs" routerLinkActive="link2" class="mat-caption link">Blogs</a>-->
+        <a routerLink="/contact-us" routerLinkActive="link2" class="mat-caption link">Contact</a>
+        <a routerLink="/about-us" routerLinkActive="link2" class="mat-caption link">About us</a>
+        <a routerLink="/contact-us" routerLinkActive="link1active" class="mat-caption link">Request a demo</a>
+    </div>
+
+</mat-toolbar>

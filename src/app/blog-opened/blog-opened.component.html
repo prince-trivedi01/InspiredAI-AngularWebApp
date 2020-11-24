@@ -1,0 +1,109 @@
+<div class="blogimg">
+    <img id="blogimage" src="assets/blogimg.png">
+</div>
+
+<div class="blogtitle">
+    <p class="title">Know how the future will look like and be ready to prepare for the changes</p>
+</div>
+
+<div class="content">
+    <div class="icon">
+        <img id="icon" src="assets/Twitter2.png"><br>
+        <img id="icon" src="assets/LinkedIn2.png"><br>
+        <img id="icon" src="assets/Facebook2.png">
+    </div>
+    <div *ngFor="let i of repeat" class="blog">{{content}}</div>
+</div>
+
+<hr>
+<div class="customer">
+    <br><br><br>
+    <p class="win-cust">Ready to win more customers<br>
+        with personal and automated outreach?</p><br>
+    <div class="btn-div"><button mat-flat-button class="tryfreebtn"></button></div>
+    <br><br><br>
+</div>
+
+<div class="shareArticle">
+    <p>Share article</p>
+</div>
+
+<div class="social">
+    <div class="socialIcon"><img src="assets/Twitter2.png" (click)="dummyFunc()"></div>
+    <div class="socialIcon"><img src="assets/LinkedIn2.png" (click)="dummyFunc()"></div>
+    <div class="socialIcon"><img src="assets/Facebook2.png" (click)="dummyFunc()"></div>
+</div>
+
+<div class="shareArticle">
+    <p style="font-weight: bold; margin-top: 3rem;">Was this article helpful?</p>
+</div>
+
+<div class="emojiparent">
+    <div class="emojis">
+        <img class="emojibg" src="assets/emojibg.png">
+        <img class="happysad" src="assets/happy.png" (click)="dummyFunc()">
+    </div>
+    <div class="emojis">
+        <img class="emojibg" src="assets/emojibg.png">
+        <img class="happysad" src="assets/sad.png" (click)="dummyFunc()">
+    </div>
+</div>
+
+<!--Review cards-->
+<div>
+    <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide *ngFor="let rc of ReviewCards; let i=index">
+            <mat-card mat-elevation-z0 [ngClass]="(i%2==0)?'reviewcardone':'reviewcardtwo'">
+                <div fxLayout="column" fxLayoutAlign="space-around">
+                    <mat-card-header>
+                        <img mat-card-avatar src={{rc.imagePath}} />
+                        <mat-card-title>{{rc.title}}</mat-card-title>
+                        <mat-card-subtitle>{{rc.date | date:'h:mm a EEEE, MMMM d'}}</mat-card-subtitle>
+                        <button mat-icon-button class="icon-one">
+                            <mat-icon>more_vert</mat-icon>
+                        </button>
+                    </mat-card-header>
+                    <div id="rcontent">{{rc.para}}</div>
+                    <div id="likes">
+                        <button mat-icon-button class="icon-two">
+                            <mat-icon>thumb_up</mat-icon>
+                        </button>
+                        {{rc.likes}} Likes
+                    </div>
+                </div>
+            </mat-card>
+        </ng-template>
+    </owl-carousel-o>
+</div>
+
+<div class="division" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="2.875rem">
+    <input ngClass="inp" [ngClass.xs]="{'inp':false,'inpxs':true}" type="text" placeholder="Join the discussion..."/>
+    <div fxLayout fxLayoutAlign="center center" fxLayoutGap="2.75rem" fxLayout.xs="column" fxLayoutAlign.xs="none center">
+        <div class="socialText">Log In with</div>
+        <div>
+            <div class="socialIcon"><img src="assets/Twitter2.png" (click)="dummyFunc()" style="height: 6.75rem;"></div>
+            <div class="socialIcon"><img src="assets/Facebook2.png" (click)="dummyFunc()" style="height: 6.75rem;"></div>
+            <div class="socialIcon"><img src="assets/Gmail2.png" (click)="dummyFunc()" style="height: 6.75rem;"></div>
+        </div>
+    </div>
+</div>
+
+<!--Similar articles section-->
+<div class="division">
+    <h1 class="heading">Similar Articles</h1>
+    <div id="box" fxLayout="row wrap" fxLayoutAlign="space-between" fxLayout.xs="column" fxLayoutAlign.xs="none center">
+        <mat-card class="card" mat-elevation-z0 *ngFor="let card of Cards">
+            <div fxLayout="column">
+                <img class="size2" src={{card.imagePath}}>
+                <div id="title">{{card.title}}</div>
+                <div id="caption">
+                    <mat-icon>visibility</mat-icon>{{card.views}} Views
+                    | <mat-icon style="color: #BA0000">favorite</mat-icon>{{card.likes}} likes
+                    | <mat-icon style="color: #0093FF">comment</mat-icon>{{card.comments}} Comments
+                </div>
+                <div id="para">{{card.para | slice:0:172}}</div>
+                <a id="link" href="#">Read more</a>
+            </div>
+        </mat-card>
+    </div>
+</div>

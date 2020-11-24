@@ -1,0 +1,160 @@
+@media screen and (min-resolution: 120dpi) { 
+    .about {zoom: 0.8;}
+}
+@media screen and (min-resolution: 144dpi) { 
+    .about {zoom: 0.67;}
+}
+@media only screen and (max-width: 599px) {
+    .mat-display-1{
+        text-align: center;
+    }
+    #runninggirl{
+        margin-right: 0;
+        width: 100%;
+    }
+    .card{
+        width: 90% !important;
+        border-radius: 20px !important;
+    }
+    #card_img{
+        height: 20rem !important;
+        width: 100% !important;
+    }
+    .text{
+        padding: 1rem !important;
+    }
+    .quotes{
+        height: 1.5rem !important;
+    }
+    .mat-caption1{
+        margin: 0 2.5rem !important;
+        line-height: 2rem !important;
+    }
+    .mat-caption2{
+        margin-top: 2rem !important;
+    }
+}
+
+.Second{
+    background-image: url(/assets/incline.png);
+    background-repeat: no-repeat;
+    background-size:  contain;
+    background-position: right;
+    margin-top: 17.95rem;
+    padding: 0 10.9rem 0 11.84rem;
+    height: 41.57rem;
+    text-align: right;
+}
+#sittingman{
+    max-height: 34.57rem;
+}
+
+.Third{
+    background-image: url(/assets/square.png);
+    background-repeat: no-repeat;
+    background-size:  contain;
+    height: 46.25rem;
+    margin: 15.47rem 7rem 0;
+    padding-left: 6.25rem;
+}
+#ill{
+    max-height: 34.64rem; 
+}
+
+.Fourth{
+    background-image: url(/assets/square2.png);
+    background-repeat: no-repeat;
+    background-size:  contain;
+    background-position: right;
+    height: 46.25rem;
+    margin: 15.18rem 10.93rem 0;
+    padding: 3.3rem 5.8125rem 0 0;
+    text-align: right;
+}
+#runninggirl{
+    max-height: 28.5rem;
+    margin-right: -3rem;
+}
+
+.Fifth{
+    margin-top: 15.18rem;
+}
+#harshmody{   
+    width: 90%;
+}
+
+.mat-display-1{
+    color: #24262B;
+    font-size: 4.375rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    line-height: 5rem;
+    margin-bottom: 3.125rem;
+}
+.mat-caption{
+    color: #24262B;
+    font-size: 1.375rem;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    line-height: 2.25rem;
+    text-align: justify;
+}
+.mat-caption1{
+    color: #24262B;
+    font-size: 1.375rem;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    line-height: 2.5rem;
+    text-align: justify;
+    margin: 0 5.5rem;
+}
+.mat-caption2{
+    color: #24262B;
+    font-size: 1.375rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 2.125rem;
+    text-align: right;
+    //margin-top: 15.65rem;
+}
+
+.Small{
+    margin: 8.68rem 1rem 0 !important;
+    padding: 2rem 1rem;
+    background-image: linear-gradient(to bottom left, #D0FDF5, #F5FEFF);
+    border-radius: 20px;
+}
+.Small1{
+    margin: 8.68rem 1rem 0 !important;
+    padding: 2rem 1rem;
+    background-image: linear-gradient(to bottom left, #BEF5EC, #E2FBFF);
+    border-radius: 20px;
+}
+.Small2{
+    margin: 8.68rem 1rem 0 !important;
+    padding: 2rem 1rem;
+    background-image: linear-gradient(to bottom right,#BEF5EC, #E2FBFF);
+    border-radius: 20px;
+}
+
+.card{
+    border-width: 0;
+    border-radius: 40px;
+    height: fit-content;
+    width: 83.07%;   
+    box-shadow: 0 3px 20px rgba(0,0,0,0.16);
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 8.81rem;
+}
+#card_img{
+    height: 100%;
+    width: 42%;
+}
+
+.text{
+    padding: 3.75rem;
+}
+.quotes{
+    height: 2.5rem;
+}

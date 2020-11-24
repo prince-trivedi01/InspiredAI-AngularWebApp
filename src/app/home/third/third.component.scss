@@ -1,0 +1,68 @@
+@media screen and (min-resolution: 120dpi) { 
+    .third {zoom: 0.8;}
+}
+@media screen and (min-resolution: 144dpi) { 
+    .third {zoom: 0.67;}
+}
+@media only screen and (max-width: 599px){
+    .mat-display-1,.mat-display-2{
+        font-size: 1.15rem !important;
+        line-height: 1.5rem !important;
+    }
+    .mat-caption-1,.mat-caption-2{
+        font-size: 0.65rem !important;
+        line-height: 1rem !important;
+    }
+}
+.third{
+    padding: 24.6rem 9rem 28.25rem;
+    background-image: url(/assets/third_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 4rem;
+}
+.thirdsm{
+    padding: 14.6rem 1rem 24.625rem;
+    background-image: url(/assets/third_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 4rem;
+}
+.mat-display-1{
+    color: #24262B;
+    margin-bottom: 0.625rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    letter-spacing: 0.03em;
+    text-align: right;
+}
+.mat-caption-1{
+    color: #24262B;
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    letter-spacing: 0.03em;
+    text-align: right;
+}
+.mat-display-2{
+    color: #24262B;
+    margin-bottom: 0.625rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    letter-spacing: 0.03em;
+}
+.mat-caption-2{
+    color: #24262B;
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    letter-spacing: 0.03em;
+}
+#image{
+    width: 100%;
+}
+.portion{
+    max-width: 15.1875rem;
+}

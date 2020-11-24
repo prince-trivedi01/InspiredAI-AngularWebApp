@@ -1,0 +1,380 @@
+
+<div class="plans">
+  <p class="flex-plans">Flexible plans you've<br>
+  Been looking for</p>
+  <p class="greyed">Try chatbot free for one month. No credit card required.</p>
+</div>
+<div class="btn-div"><button mat-button class="tryfreebtn"></button></div>
+
+<!-- <div class="cards">
+  <div class="x">
+    <div class="personalcardp1" (mouseover)="changecard1=true" (mouseout)="changecard1=false">
+      <div class="personalcardp" *ngIf="!changecard1">
+        <img id="personal" src="assets/cardclose.png">
+        <img src="assets/personal.png" id="personal-logo">
+        <p class="categoryp">personal</p>
+        <p class="money" style="left: 321.26px;"><sup>{{moneySymbol}}</sup>59</p>
+        <p class="month">per month</p>
+      </div>
+      <div class="cardopened" *ngIf="changecard1">
+        <img id="personalopen" src="assets/cardopen.png">
+      </div>
+      
+    </div>
+    
+    <div class="personalcardt1" (mouseover)="changecard2=true" (mouseout)="changecard2=false">
+    <div class="personalcardt" *ngIf="!changecard2">  
+      <img id="team" src="assets/cardclose.png">
+      <img src="assets/team.png" id="personal-logo">
+      <p class="categoryt">Team</p>
+      <p class="money" style="left: 301.6px;"><sup>{{moneySymbol}}</sup>129</p>
+      <p class="month">per month</p>
+    </div>
+    </div>
+    
+    <div class="personalcardc1" (mouseover)="changecard3=true" (mouseout)="changecard3=false">
+    <div class="personalcardc" *ngIf="!changecard3">
+      <img id="corporate" src="assets/cardclose.png">
+      <img src="assets/corporate.png" id="personal-logo">
+      <p class="categoryc">corporate</p>
+      <p class="money" style="left: 301.6px;"><sup>{{moneySymbol}}</sup>199</p>
+      <p class="month">per month</p>
+    </div>
+    </div>   
+    
+  </div>
+
+</div>
+
+<div class="cards">
+  <div (mouseover)="changecard1=true" (mouseout)="changecard1=false" class="leftcard">
+  <mat-card *ngIf="!changecard1" class="personal">
+    <img src='assets/personal.png' id="cardimg">
+    <p class="category">personal</p>
+    <p class="money"><sup>{{moneySymbol}}</sup>59</p>
+    <p class="month">per month</p>
+  </mat-card>
+  <mat-card *ngIf="changecard1" class="personal2">
+    <br>
+    <p class="category2">personal</p>
+    <p class="card-content">
+      1 active chatbot<br>
+      Unlimited number of stories<br>
+      7-day training history<br>
+      All integrations<br>
+      Basic reporting<br>
+      Data Security
+    </p>
+    <p class="free-trial">Start your free trial</p>
+    <button mat-button class="free-trial-btn"><span class="material-icons">arrow_right_alt</span></button>
+  </mat-card>
+  
+  </div>
+
+  <div (mouseover)="changecard2=true" (mouseout)="changecard2=false" class="centercard">
+  <mat-card *ngIf="!changecard2" class="personal">
+    <img src='assets/team.png' id="cardimg">
+    <p class="category">team</p>
+    <p class="money"><sup>{{moneySymbol}}</sup>129</p>
+    <p class="month">per month</p>
+  </mat-card>
+  <mat-card *ngIf="changecard2" class="personal2">
+    <br>
+    <p class="category2">team</p>
+    <p class="card-content">
+      5 active chatbots<br>
+      Unlimited number of stories<br>
+      Unlimited training history<br>
+      All integrations<br>
+      Advanced reporting<br>
+      All chatbot reports are available<br>
+      Data Security<br>
+      Team collaboration<br>
+      Smart actions
+    </p>
+    <p class="free-trial">Start your free trial</p>
+    <button mat-button class="free-trial-btn"><span class="material-icons">arrow_right_alt</span></button>
+  </mat-card>
+  </div>
+  <div (mouseover)="changecard3=true" (mouseout)="changecard3=false" class="rightcard">
+  <mat-card *ngIf="!changecard3" class="personal">
+    <img src='assets/corporate.png' id="cardimg">
+    <p class="category">corporate</p>
+    <p class="money"><sup>{{moneySymbol}}</sup>199</p>
+    <p class="month">per month</p>
+  </mat-card>
+  <mat-card *ngIf="changecard3" class="personal2">
+    <br>
+    <p class="category2">corporate</p>
+    <p class="card-content">
+      Unlimited chatbots<br>
+      Unlimited number of stories<br>
+      Unlimited training history<br>
+      Advanced reporting<br>
+      Data Security<br>
+      Team collaboration<br>
+      Smart actions<br>
+      Personal onboarding<br>
+      Premium customer support<br>
+      Security assistance
+    </p>
+    <p class="free-trial">Start your free trial</p>
+    <button mat-button class="free-trial-btn"><span class="material-icons">arrow_right_alt</span></button>
+  </mat-card>
+  
+  </div>
+</div> -->
+
+<br><br><br><br><br>
+<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign="space-around center" fxLayoutGap.md="-2rem">
+  <div class="leftfx1" (mouseover)="changecard1=true" (mouseout)="changecard1=false" >
+    <img *ngIf="!changecard1" id="closecard" src="assets/cardclose.png">
+    <img *ngIf="!changecard1" src="assets/personal.png" id="personal-logo">
+    <p *ngIf="!changecard1" class="categoryp">personal</p>
+    <p *ngIf="!changecard1" class="money"><sup>{{moneySymbol}}</sup>{{perMon}}</p>
+    <p *ngIf="!changecard1" class="month">per month</p>
+    <img *ngIf="changecard1" id="opencard" src="assets/cardopen.png">
+    <p *ngIf="changecard1" class="categorypopen">personal</p>
+    <p *ngIf="changecard1" class="card-contentp">
+    1 active chatbot<br>
+    Unlimited number of stories<br>
+    7-day training history<br>
+    All integrations<br>
+    Basic reporting<br>
+    Data Security
+    </p>
+    <p *ngIf="changecard1" class="free-trial">Start your free trial</p>
+    <button *ngIf="changecard1" mat-button class="free-trial-btn"><span class="material-icons">arrow_right_alt</span></button>
+    
+  </div>
+
+  <div class="leftfx2" (mouseover)="changecard2=true" (mouseout)="changecard2=false">
+    <img *ngIf="!changecard2" id="closecard" src="assets/cardclose.png">
+    <img *ngIf="!changecard2" src="assets/team.png" id="personal-logo">
+    <p *ngIf="!changecard2" class="categoryp">team</p>
+    <p *ngIf="!changecard2" class="money"><sup>{{moneySymbol}}</sup>{{teamMon}}</p>
+    <p *ngIf="!changecard2" class="month">per month</p>
+    <img *ngIf="changecard2" id="opencard" src="assets/cardopen.png">
+    <p *ngIf="changecard2" class="categorypopen">team</p>
+    <p *ngIf="changecard2" class="card-contentt">
+      5 active chatbots<br>
+      Unlimited number of stories<br>
+      Unlimited training history<br>
+      All integrations<br>
+      Advanced reporting<br>
+      All chatbot reports are available<br>
+      Data Security<br>
+      Team collaboration<br>
+      Smart actions
+    </p>
+    <p *ngIf="changecard2" class="free-trial">Start your free trial</p>
+    <button *ngIf="changecard2" mat-button class="free-trial-btn"><span class="material-icons">arrow_right_alt</span></button>
+  
+</div>  
+<div class="leftfx3" (mouseover)="changecard3=true" (mouseout)="changecard3=false">
+    <img *ngIf="!changecard3" id="closecard" src="assets/cardclose.png">
+    <img *ngIf="!changecard3" src="assets/corporate.png" id="personal-logo">
+  <p *ngIf="!changecard3" class="categoryp">corporate</p>
+  <p *ngIf="!changecard3" class="money"><sup>{{moneySymbol}}</sup>{{corMon}}</p>
+  <p *ngIf="!changecard3" class="month">per month</p>
+  <img *ngIf="changecard3" id="opencard" src="assets/cardopen.png">
+    <p *ngIf="changecard3" class="categorypopen">corporate</p>
+    <p *ngIf="changecard3" class="card-contentc">
+      Unlimited chatbots<br>
+  Unlimited number of stories<br>
+  Unlimited training history<br>
+  Advanced reporting<br>
+  Data Security<br>
+  Team collaboration<br>
+  Smart actions<br>
+  Personal onboarding<br>
+  Premium customer support<br>
+  Security assistance
+    </p>
+    <p *ngIf="changecard3" class="free-trial">Start your free trial</p>
+    <button *ngIf="changecard3" mat-button class="free-trial-btn"><span class="material-icons">arrow_right_alt</span></button>
+  
+</div>
+
+  
+</div>
+
+<div fxLayout="column"></div>
+
+
+<!-- <div class="cont">
+    <div class="left1" (mouseover)="changecard1=true" (mouseout)="changecard1=false" >
+      <img *ngIf="!changecard1" id="closecard" src="assets/cardclose.png">
+      <img *ngIf="!changecard1" src="assets/personal.png" id="personal-logo">
+      <p *ngIf="!changecard1" class="categoryp">personal</p>
+      <p *ngIf="!changecard1" class="money"><sup>{{moneySymbol}}</sup>{{perMon}}</p>
+      <p *ngIf="!changecard1" class="month">per month</p>
+      <img *ngIf="changecard1" id="opencard" src="assets/cardopen.png">
+      <p *ngIf="changecard1" class="categorypopen">personal</p>
+      <p *ngIf="changecard1" class="card-content">
+      1 active chatbot<br>
+      Unlimited number of stories<br>
+      7-day training history<br>
+      All integrations<br>
+      Basic reporting<br>
+      Data Security
+      </p>
+      <p *ngIf="changecard1" class="free-trial">Start your free trial</p>
+      <button *ngIf="changecard1" mat-button class="free-trial-btn"><span class="material-icons">arrow_right_alt</span></button>
+      
+    </div>
+    <div class="left2" (mouseover)="changecard2=true" (mouseout)="changecard2=false">
+        <img *ngIf="!changecard2" id="closecard" src="assets/cardclose.png">
+        <img *ngIf="!changecard2" src="assets/team.png" id="personal-logo">
+        <p *ngIf="!changecard2" class="categoryp">team</p>
+        <p *ngIf="!changecard2" class="money"><sup>{{moneySymbol}}</sup>{{teamMon}}</p>
+        <p *ngIf="!changecard2" class="month">per month</p>
+        <img *ngIf="changecard2" id="opencard" src="assets/cardopen.png">
+        <p *ngIf="changecard2" class="categorypopen">team</p>
+        <p *ngIf="changecard2" class="card-contentt">
+          5 active chatbots<br>
+          Unlimited number of stories<br>
+          Unlimited training history<br>
+          All integrations<br>
+          Advanced reporting<br>
+          All chatbot reports are available<br>
+          Data Security<br>
+          Team collaboration<br>
+          Smart actions
+        </p>
+        <p *ngIf="changecard2" class="free-trial">Start your free trial</p>
+        <button *ngIf="changecard2" mat-button class="free-trial-btn"><span class="material-icons">arrow_right_alt</span></button>
+      
+    </div>  
+    <div class="left3" (mouseover)="changecard3=true" (mouseout)="changecard3=false">
+        <img *ngIf="!changecard3" id="closecard" src="assets/cardclose.png">
+        <img *ngIf="!changecard3" src="assets/corporate.png" id="personal-logo">
+      <p *ngIf="!changecard3" class="categoryp">corporate</p>
+      <p *ngIf="!changecard3" class="money"><sup>{{moneySymbol}}</sup>{{corMon}}</p>
+      <p *ngIf="!changecard3" class="month">per month</p>
+      <img *ngIf="changecard3" id="opencard" src="assets/cardopen.png">
+        <p *ngIf="changecard3" class="categorypopen">corporate</p>
+        <p *ngIf="changecard3" class="card-contentc">
+          Unlimited chatbots<br>
+      Unlimited number of stories<br>
+      Unlimited training history<br>
+      Advanced reporting<br>
+      Data Security<br>
+      Team collaboration<br>
+      Smart actions<br>
+      Personal onboarding<br>
+      Premium customer support<br>
+      Security assistance
+        </p>
+        <p *ngIf="changecard3" class="free-trial">Start your free trial</p>
+        <button *ngIf="changecard3" mat-button class="free-trial-btn"><span class="material-icons">arrow_right_alt</span></button>
+      
+    </div>
+  </div>   -->
+
+
+<div class="row">
+  <div class="colhr"><hr></div>
+  <div class="colimgd"><img src="assets/dollar.png" (click)="rupToDol()"></div>
+  <div class="colimgr"><img src="assets/rupee.png" (click)="dolToRup()"></div>
+</div>
+<div class="plans">
+  <p class="freq">Frequently asked Questions</p>
+  <p class="greyed2">Try chatbot free for one month. No credit card required.</p>
+</div>
+
+<mat-accordion>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        What will happen when my trial expires?
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>I'm visible because I am open</p>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Can I choose what to upgrade?
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>I'm visible because I am open</p>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Can I change my subscription anytime I want?
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>I'm visible because I am open</p>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Can I subscribe to more than one plan?
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>(Enter answer here)</p>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        How many live chat messages can I send?
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>I'm visible because I am open</p>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Does the free plan allow using chatbots?
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>I'm visible because I am open</p>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        When will my chatbot limit refresh?
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>I'm visible because I am open</p>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Can I add the live chat to more than one website/store?
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>I'm visible because I am open</p>
+  </mat-expansion-panel>
+
+</mat-accordion>
+
+
+<div class="customer">
+  <br><br><br>
+  <p class="win-cust">Ready to win more customers<br>
+    with personal and automated outreach?</p><br>
+  <p class="greyed">Sign up today and see what Inspired AI can do for your business</p><br>
+  <div class="btn-div"><button mat-flat-button class="tryfreebtn"></button></div>
+  <br><br><br>
+</div>
+
+<div class="fourth" *ngIf="!devicexs"></div>
+<div class="fourthsmall" *ngIf="devicexs"></div>

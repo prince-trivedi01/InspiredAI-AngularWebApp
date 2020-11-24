@@ -1,0 +1,63 @@
+@media screen and (min-resolution: 120dpi) { 
+    .sixth {zoom: 0.8;}
+}
+@media screen and (min-resolution: 144dpi) { 
+    .sixth {zoom: 0.67;}
+}
+@media only screen and (max-width: 599px){
+    .mat-display-1,.mat-display-2{
+        text-align: center !important;
+        width: 100% !important;
+        font-size: 2rem !important;
+        line-height: 2.75rem !important;
+    }
+    .mat-caption-1,.mat-caption-2{
+        text-align: justify !important;
+        font-size: 1rem !important;
+        line-height: 1.5rem !important;
+    }
+}
+.sixth{
+    margin: 14.375rem 15.56rem 16.625rem; 
+}
+.sixthsm{
+    margin: 10rem 0;
+    padding: 0 1rem; 
+}
+.mat-display-1{
+    color: #24262B;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: 3.75rem;
+    line-height: 5rem;
+    letter-spacing: 0.03em;
+    text-align: right;
+}
+.mat-caption-1{
+    color: #24262B;
+    font-weight: normal;
+    font-size: 1.375rem;
+    line-height: 2.25rem;
+    letter-spacing: 0.03em;
+    text-align: right;
+}
+.mat-display-2{
+    width: 56%;
+    color: #24262B;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: 3.75rem;
+    line-height: 5rem;
+    letter-spacing: 0.03em;
+}
+.mat-caption-2{
+    color: #24262B;
+    font-weight: normal;
+    font-size: 1.375rem;
+    line-height: 2.25rem;
+    letter-spacing: 0.03em;
+}
+#image{
+    max-height: 30.25rem;
+    width: 100%;
+}

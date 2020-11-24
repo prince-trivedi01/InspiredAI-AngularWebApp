@@ -1,0 +1,253 @@
+@media screen and (min-resolution: 120dpi) { 
+    .division {
+        zoom: 0.8; 
+    }
+}
+@media screen and (min-resolution: 144dpi) { 
+    .division {
+        zoom: 0.67; 
+    }
+}
+.division{
+    margin-top: 8.68rem;
+}
+h1{
+    color: #24262B;
+    font-size: 2.125rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 5rem;
+}
+.heading{
+    margin-left: 1.6875rem;
+}
+.cap{
+    font-size: 1.375rem;
+    font-weight: 500;
+    letter-spacing: 0.035em;
+    line-height: 1.75rem;
+    text-align: center;
+}
+.text{
+    color: #D0EAE5;
+    font-family: poppins-bold;
+    font-size: 7.5rem;
+    letter-spacing: 0.03em;
+    line-height: 2.31rem;
+    text-align: center;
+    width: 43.8%;
+    margin: 0;
+}
+.overlay{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+}
+#read{
+    color: #24262B;
+    font-size: 1.75rem;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    line-height: 1.875rem;
+    margin: 3.5875rem 0 .6875rem;
+}
+#link1{
+    color: #16957F;
+    font-size: 1.125rem;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    line-height: 2.3125rem;
+    margin-bottom: 4.6875rem;
+    text-decoration: none;
+}
+#caption1{
+    color: #24262B;
+    font-size: 0.8125rem;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    line-height: 1.375rem;
+}
+.card{
+    border-width: 0;
+    border-radius: 10px;
+    height: 17.875rem;
+    width: 25.6875rem;   
+    box-shadow: 0 3px 20px rgba(0,0,0,0.16);
+    padding: 2.56rem 0 2.31rem;
+    margin: 2.125rem 0 3.89rem 1.3rem;
+    overflow: hidden;
+}
+.card:hover{
+    .content,.cap{filter:blur(30px) brightness(1.5); opacity: 0.5;}
+    .overlay{opacity: 1;}
+}
+.size{
+    max-width: 56.2%;
+    max-height: 10.0625rem;
+    border-radius: 5px 0 0 5px;
+}
+.size1{
+    max-height: 10.0625rem;
+    max-width: 94.89%;
+    border-radius: 5px 0 0 5px;
+}
+.card3{
+    border-width: 0;
+    border-radius: 10px;
+    height: fit-content;
+    width: 33.75rem;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.16);
+    padding: 0 1.78rem;
+    margin-bottom: 7.4375rem;
+}
+.size2{
+    height: 15.625rem;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 1.9375rem;
+}
+#title{
+    color: #24262B;
+    font-size: 1.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 2.0625rem;
+    margin-bottom: 1rem;
+}
+#caption{
+    margin-bottom: 2.25rem;
+    color: #24262B;
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    line-height: 1.6875rem;
+}
+//.mat-button{
+//    color: #24262B;
+//    font-size: 1rem;
+//    font-weight: normal;
+//    letter-spacing: 0.02em;
+//    line-height: 1.6875rem;
+//    padding: 0;
+//}
+#para{
+    color: #24262B;
+    font-size: 1.125rem;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    line-height: 1.6875rem;
+    margin-bottom: 1rem;
+}
+#link{
+    color: #16957F;
+    font-size: 1.125rem;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    line-height: 1.6875rem;
+    text-decoration: none;
+    margin-bottom: 2.3125rem;
+}
+#box{
+    margin: 0 1.3125rem;
+}
+.bigblog{
+    margin: 4rem 1.3125rem 0;
+    border-radius: 10px;
+    height: 51.375rem;
+    max-width: 117.375rem;
+    overflow: hidden;
+    position: relative;
+    background-color: #24262B;
+}
+.sample{
+    height: 100%;
+    width: 100%;
+}
+.content1{
+    position: absolute;
+    bottom: 2.5rem;
+    left: 2.375rem;
+    color: white;
+    max-width: 58rem;
+}
+#p1{
+    font-size: 1.25rem;
+    letter-spacing: 0.02em;
+    line-height: 1.875rem;
+}
+#p2{
+    font-size: 3.125rem;
+    letter-spacing: 0.03em;
+    line-height: 3.75rem;
+}
+#p3{
+    font-size: 1.125rem;
+    letter-spacing: 0.02em;
+    line-height: 1.875rem;
+}
+.bigblog:hover{
+    .sample{filter:blur(30px);}
+    .content1{opacity: 0;}
+    .overlay{
+        opacity: 1 !important;
+        top: 20rem;
+    }
+}
+#bigread{
+    color: white;
+    font-size: 5.125rem;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    line-height: 6.5rem;
+}
+#biglink{
+    color: #16957F;
+    font-size: 2.75rem;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    line-height: 4.3125rem;
+    text-decoration: none;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 25px;
+}
+
+.card1 {
+  overflow: hidden;
+}
+.card1:hover {
+  .content,
+  .cap,
+  .cap1 ,
+  .container{
+    filter: blur(30px) brightness(1.5);
+    opacity: 0.5;
+  }
+  .overlay1 {
+    opacity: 1;
+  }
+}
+.cap1 {
+  font-size: 1.375rem;
+  font-weight: 500;
+  letter-spacing: 0.035em;
+  line-height: 1.75rem;
+  text-align: left;
+}
+.overlay1 {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+mat-icon{
+    position: relative;
+    font-size: inherit;
+}

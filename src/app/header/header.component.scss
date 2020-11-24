@@ -1,0 +1,95 @@
+.navbar{
+    padding: 0 6rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 6.65rem;
+    background: none;
+    position: fixed;
+    z-index: 100;
+    backdrop-filter: blur(0.1rem);
+    top: 0;
+}
+@media only screen and (max-width: 959px){
+    .navbar{
+        padding: 0 0.25rem 0 0.5rem !important;
+        height: 6rem !important;
+    }
+}
+*:focus{
+    outline: none !important;
+}
+.mat-icon-button{
+    height: 3rem !important;
+    width: 3rem !important;
+    line-height: 3rem !important;
+}
+.mat-icon{
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+    font-size: 2.5rem !important;
+    line-height: 2.5rem !important;
+    color: #82E7D6;
+}
+span{
+    padding-left: 0.5rem; 
+    font-weight: 500; 
+    font-size: 1.5rem; 
+    font-family: Lustria;
+    letter-spacing: 0.05em;
+}
+.logo1{
+    max-width: 4rem;
+    max-height: 4rem;
+    display: inline-block;
+}
+.vertical_center{
+    display: flex; 
+    align-items: center;
+}
+.btn{
+    border-radius: 10px;
+    color: white;
+    background-color: #82E7D6;
+    width: 16rem;
+    height: 3.56rem;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 1.56rem;
+}
+.btn:hover{
+    background-color: #24C3A8 !important;
+    font-size: 1.52rem !important;
+    line-height: initial !important;
+    transition-duration: 0.45s;
+}
+.btn:not(:hover){
+    transition-duration: 0.45s;
+
+}
+.logo_link{
+    text-decoration: none;
+    color: black;
+}
+.link{
+    text-decoration: none;
+    margin-right: 3.125rem;
+    color:#788A87;
+    font-size: 1.25rem;
+}
+.link:hover{
+    color:#24C3A8 !important;
+}
+.link2{
+    color:#24262B !important;
+}
+
+.link1{
+    text-decoration: none;
+    margin-right: 3.81rem;
+    color: #24C3A8;
+    font-size: 1.25rem;
+}
+.link1active{
+    color: #20ad96 !important;
+}

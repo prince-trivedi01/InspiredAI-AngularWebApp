@@ -1,0 +1,27 @@
+<app-header *ngIf="!scrolled" (sidenavToggle)="sidenav.toggle()"></app-header>
+
+<mat-sidenav-container [hasBackdrop]="false">
+    <mat-sidenav #sidenav role="navigation">
+        <div fxLayout.xs="column">
+            <div>
+                <mat-nav-list>
+                    <a mat-list-item  routerLink="/home" routerLinkActive="link2" (click)="sidenav.close()" class="link">Home</a>
+                    <a mat-list-item  routerLink="/solution" routerLinkActive="link2" (click)="sidenav.close()" class="link">Solutions</a>
+                    <!--<a mat-list-item  routerLink="/pricing" routerLinkActive="link2" (click)="sidenav.close()" class="link">Pricing</a>-->
+                    <!--<a mat-list-item  routerLink="/blogs" routerLinkActive="link2" (click)="sidenav.close()" class="link">Blogs</a>-->
+                    <a mat-list-item  routerLink="/contact-us" routerLinkActive="link2" (click)="sidenav.close()" class="link">Contact</a>
+                    <a mat-list-item  routerLink="/about-us" routerLinkActive="link2" (click)="sidenav.close()" class="link">About us</a>
+                    <a mat-list-item  routerLink="/contact-us" routerLinkActive="link1active" (click)="sidenav.close()" class="link">Request a demo</a>
+                </mat-nav-list>
+            </div>
+            <!--<div fxLayoutAlign="center">
+                <button mat-flat-button (click)="sidenav.close()" class="btn">Request a demo</button>
+            </div>-->
+        </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="content" role="main">
+        <router-outlet></router-outlet>
+        <app-bottompanel></app-bottompanel>
+    </mat-sidenav-content>
+</mat-sidenav-container>

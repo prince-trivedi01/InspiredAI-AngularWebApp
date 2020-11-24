@@ -1,0 +1,85 @@
+<!--Third content-->
+<div
+  ngClass="third"
+  [ngClass.lt-md]="{ third: false, thirdsm: true }"
+  fxLayout.xs="column"
+  fxLayoutGap.xs="5rem"
+>
+  <div fxLayout fxLayoutAlign="start center" fxLayoutGap="3.125rem">
+    <div>
+      <img src="assets/third_img1.png" id="image" />
+    </div>
+    <div fxLayout="column" fxLayoutAlign="center" class="portion">
+      <div class="mat-display-2">Facial Recognition</div>
+      <div class="mat-caption-2">
+        RedEye uses one of the best facial recognition programs to detect any and everyone that enters your premises.
+      </div>
+    </div>
+  </div>
+  <div fxLayout fxLayoutAlign="end center" fxLayoutGap="3.125rem">
+    <div fxLayout="column" fxLayoutAlign="center" class="portion">
+      <div class="mat-display-1">Behaviour Analysis</div>
+      <div class="mat-caption-1">
+        RedEye not only recognizes the face, but it also detects human behaviour and red flags suspicious behaviour.
+      </div>
+    </div>
+    <div>
+      <img src="assets/third_img2.png" id="image" />
+    </div>
+  </div>
+  <div fxLayout fxLayoutAlign="start center" fxLayoutGap="3.125rem">
+    <div>
+      <img src="assets/third_img3.png" id="image" />
+    </div>
+    <div fxLayout="column" fxLayoutAlign="center" class="portion">
+      <div class="mat-display-2">Theft Detection</div>
+      <div class="mat-caption-2">
+        RedEye uses machine learning algorithms to detect various thefts and suspicious behaviours occurring in and around your property.
+      </div>
+    </div>
+  </div>
+  <div fxLayout fxLayoutAlign="end center" fxLayoutGap="3.125rem">
+    <div fxLayout="column" fxLayoutAlign="center" class="portion">
+      <div class="mat-display-1">Customer Preferences</div>
+      <div class="mat-caption-1">
+        As an added bonus to learning about human behaviour, we can even learn about why the customer prefers a certain product over the other. Think data collection but offline.
+      </div>
+    </div>
+    <div>
+      <img src="assets/third_img4.png" id="image" />
+    </div>
+  </div>
+</div>
+<div>
+  <div fxHide.lt-md>
+    <h1 style="text-align: center; font-size: 60px">Our offerings</h1>
+    <br />
+    <div fxLayoutAlign="center center">
+      <p
+        style="
+          text-align: justify;
+          width: 850px;
+          font-size: 20px;
+          line-height: 30px;
+        ">
+        Shoplifting, package thefts and other property damage issues are some of the major concerns with retail and homeowners. With our new product, ‘RedEye’, we aim at detecting these issues at the ground level using Artificial Intelligence that requires no or minimum human interaction. It enables you to sleep peacefully without worrying about thefts or property damages. Because what’s the point of having a CCTV camera system if it only records a movie? 
+      </p>
+    </div>
+  </div>
+  <div fxHide.gt-md>
+    <h1 style="text-align: center; font-size: 50px">Our offerings</h1>
+    <br /><br />
+    <div fxLayoutAlign="center center">
+      <p
+        style="
+          text-align: justify;
+          width: 340px;
+          font-size: 20px;
+          line-height: 30px;
+        "
+      >
+      Shoplifting, package thefts and other property damage issues are some of the major concerns with retail and homeowners. With our new product, ‘RedEye’, we aim at detecting these issues at the ground level using Artificial Intelligence that requires no or minimum human interaction. It enables you to sleep peacefully without worrying about thefts or property damages. Because what’s the point of having a CCTV camera system if it only records a movie? 
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,100 @@
+<!--First content-->
+<div id="first" *ngIf="!devicexs"  fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutGap="7.5rem">
+  <section fxLayout="column" fxLayoutAlign="center" style="padding-right: 5rem;">
+    <br><p class="mat-display-1" style="text-decoration-style: roboto;font-size: 3.125rem;">Let's Talk !</p>
+    <p class="mat-caption" style="color: #788A87;"> To request a quote or want to meet up for coffee,<br />
+      contact us directly or fill out the form and we will <br />
+      get back to you promptly.</p>
+    <br>
+    <form fxLayout="column" #form="ngForm" style="margin-top: -0.125rem">
+        <input class="input" style="height:2.5rem"  type="name" placeholder="Name" name="name" ngModel required #nameinput="ngModel" />
+
+         <!--<mat-error *ngIf="nameinput.hasError('required')">Field must not be empty</mat-error>-->
+        <mat-error *ngIf="!nameinput.hasError('required')">Name is invalid</mat-error>
+      
+      <br>
+        <input class="input1"  style="height:2.5rem"  type="text" placeholder="Phone" name="Phone" ngModel required #phoneinput="ngModel" />
+
+        <!--<mat-error *ngIf="phoneinput.hasError('required')">Field must not be empty</mat-error>-->
+        <mat-error *ngIf="!phoneinput.hasError('required')">Phone is invalid</mat-error>
+      
+      <br>
+        <input class="input2" style="height:2.5rem"  type="text" placeholder="Email" name="Email" ngModel required #emailinput="ngModel" />
+
+         <!--<mat-error *ngIf="emailinput.hasError('required')">Field must not be empty</mat-error>-->
+        <mat-error *ngIf="!emailinput.hasError('required')">Email is invalid</mat-error>
+      <br>
+        <input class="input3"  style="height:4.375rem" type="text" placeholder="Message" name="Message" ngModel required
+          #messageinput="ngModel" />
+
+         <!--<mat-error *ngIf="messageinput.hasError('required')">Field must not be empty</mat-error>-->
+        <mat-error *ngIf="!messageinput.hasError('required')">Message is invalid</mat-error>
+      
+      <br><br><button (click)="submitOn()" mat-raised-button class="mat-caption-btn" color="cyan" style="background-color: lightseagreen;width:7.1875rem;margin-left: 6.875rem;border-radius: 0.625rem;color: white;">Submit</button>
+    </form>
+  </section>
+
+
+  <section>
+    <img src="assets\illustration.png" id="lady">
+  </section>
+  <section fxLayout="column" fxLayout.xs="row" fxLayoutAlign="center">
+    <a href="https://twitter.com/InspiredAi" target="_blank"><img class="contact" src="assets/Twitter2.png"></a>
+    <a href="mailto: contact@inspiredai.co" target="_blank"><img class="contact" src="assets/Gmail2.png"></a>
+    <a href="https://in.linkedin.com/company/inspired-ai" target="_blank"><img class="contact" src="assets/LinkedIn2.png"></a>
+    <a href="https://www.facebook.com/inspiredai/" target="_blank"><img class="contact" src="assets/Facebook2.png"></a>
+    <a href="https://www.instagram.com/inspiredai/" target="_blank"><img class="contact" src="assets/Instagram2.png"></a>
+  </section>
+
+</div>
+
+<!--Firstsmall content-->
+<div id="firstsmall" *ngIf="devicexs" fxLayout.xs="column" fxLayoutAlign.xs="center center" fxLayoutGap.xs="7.5rem">
+  <section fxLayout="column" fxLayoutAlign="center" >
+    <br><p class="mat-display-1" style="text-decoration-style: roboto;font-size: 3.125rem;">Let's Talk !</p>
+    <p class="mat-caption" style="color: #788A87;"> To request a quote or want to meet up for coffee,<br />
+      contact us directly or fill out the form and we will <br />
+      get back to you promptly.</p>
+    <br>
+    <form fxLayout="column" #form="ngForm" style="margin-top: -0.125rem">
+        <input class="input" style="height:2.5rem"  type="name" placeholder="Name" name="name" ngModel required #nameinput="ngModel" />
+
+         <!--<mat-error *ngIf="nameinput.hasError('required')">Field must not be empty</mat-error>-->
+        <mat-error *ngIf="!nameinput.hasError('required')">Name is invalid</mat-error>
+      
+      <br>
+        <input class="input1"  style="height:2.5rem"  type="text" placeholder="Phone" name="Phone" ngModel required #phoneinput="ngModel" />
+
+        <!--<mat-error *ngIf="phoneinput.hasError('required')">Field must not be empty</mat-error>-->
+        <mat-error *ngIf="!phoneinput.hasError('required')">Phone is invalid</mat-error>
+      
+      <br>
+        <input class="input2" style="height:2.5rem"  type="text" placeholder="Email" name="Email" ngModel required #emailinput="ngModel" />
+
+         <!--<mat-error *ngIf="emailinput.hasError('required')">Field must not be empty</mat-error>-->
+        <mat-error *ngIf="!emailinput.hasError('required')">Email is invalid</mat-error>
+      <br>
+        <input class="input3"  style="height:4.375rem" type="text" placeholder="Message" name="Message" ngModel required
+          #messageinput="ngModel" />
+
+         <!--<mat-error *ngIf="messageinput.hasError('required')">Field must not be empty</mat-error>-->
+        <mat-error *ngIf="!messageinput.hasError('required')">Message is invalid</mat-error>
+      
+      <br><br><button mat-raised-button class="mat-caption-btn" color="cyan" style="background-color: lightseagreen;width:7.1875rem;margin-left: 6.875rem;border-radius: 0.625rem;color: white;">Submit</button>
+    </form>
+  </section>
+
+
+  <section>
+    <img src="assets\illustration.png" id="lady">
+  </section>
+  <section fxLayout.xs="row" fxLayoutAlign.xs="center">
+    <a href="https://twitter.com/InspiredAi" target="_blank"><img class="contact" src="assets/Twitter2.png"></a>
+    <a href="mailto: contact@inspiredai.co" target="_blank"><img class="contact" src="assets/Gmail2.png"></a>
+    <a href="https://in.linkedin.com/company/inspired-ai" target="_blank"><img class="contact" src="assets/LinkedIn2.png"></a>
+    <a href="https://www.facebook.com/inspiredai/" target="_blank"><img class="contact" src="assets/Facebook2.png"></a>
+    <a href="https://www.instagram.com/inspiredai/" target="_blank"><img class="contact" src="assets/Instagram2.png"></a>
+  </section>
+
+</div>
+

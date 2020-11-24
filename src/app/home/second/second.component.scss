@@ -1,0 +1,51 @@
+@media screen and (min-resolution: 120dpi) { 
+    .second,.secondsm {zoom: 0.8;}
+}
+@media screen and (min-resolution: 144dpi) { 
+    .second,.secondsm {zoom: 0.67;}
+}
+@media only screen and (max-width: 599px){
+    .mat-display-1{
+        text-align: center;
+        font-weight: 400 !important;
+    }
+}
+.second{
+    margin: 13.875rem 15.25rem 0 16.3125rem;
+}
+.secondsm{
+    padding: 0 1rem;
+    margin: 10rem 0;
+}
+#image{
+    width: 100%;
+}
+.mat-display-1{
+    color: #24262B;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: 3.75rem;
+    line-height: 5rem;
+    letter-spacing: 0.03em;
+}
+.mat-caption{
+    color: #24262B;
+    font-weight: normal;
+    font-size: 1.375rem;
+    line-height: 2.25rem;
+    letter-spacing: 0.03em;
+    text-align: justify;
+}
+.btn{
+    background: #24C3A8;
+    overflow: hidden;
+    height: 5.375rem;
+    width: 15.625rem;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    color: white;
+    line-height: 5.5rem;
+    margin-top: 2.5rem;
+}

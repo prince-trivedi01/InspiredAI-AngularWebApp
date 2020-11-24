@@ -1,0 +1,58 @@
+<!--Second content-->
+<div class="about">
+    <div ngClass="Second" [ngClass.lt-md]="{'Second':false,'Small':true}" fxLayout="row"
+        fxLayoutAlign="space-between none" fxLayout.xs="column" fxLayoutAlign.lt-md="space-evenly center">
+        <div fxLayout="column" fxLayoutAlign="end" fxFlexOrder.xs="2">
+            <img src="assets/sittingman.png" id="sittingman">
+        </div>
+        <div fxLayout="column" fxFlex=38 fxLayoutAlign="center" fxFlexOrder.xs="1">
+            <p class="mat-display-1">The stories.</p>
+            <p class="mat-caption">We have friends, family living in the US who own departmental stores. The major problem they face is Shoplifting & Shrinkage. Not just that, in spite of having CCTVs installed in their Houses & Stores, they are often facing thefts and burglaries. They are ready to accept RedEye for their home security, as well as their retail outlets in the US making them our potential clients. </p>
+        </div>
+    </div>
+
+    <!--Third content-->
+    <div ngClass="Third" [ngClass.lt-md]="{'Third':false,'Small1':true}" fxLayout="row" fxLayoutAlign="none center"
+        fxLayoutGap="6.5625rem" fxLayout.xs="column" fxLayoutAlign.lt-md="space-evenly center" fxLayoutGap.xs=none>
+        <div fxLayout="column" fxFlex=37>
+            <div class="mat-display-1">Our Values</div>
+            <div class="mat-caption">We believe in leading with innovation and that stands to be our core value both for our employees and our customers. Our aim is to bring about a change and give a boost to the existing traditional means. With the cutting-edge technology of the future, we not only want to excel in what we do but bring about a change for good.
+            </div>
+        </div>
+        <div>
+            <img src="assets/ill.png" id="ill">
+        </div>
+    </div>
+
+    <!--Fourth content-->
+    <div ngClass="Fourth" [ngClass.lt-md]="{'Fourth':false,'Small2':true}" fxLayout="row" fxLayoutAlign="end"
+        fxLayout.xs="column" fxLayoutAlign.lt-md="space-evenly center">
+        <div fxFlexOrder.xs="2">
+            <img src="assets/runninggirl.png" id="runninggirl">
+        </div>
+        <div fxLayout="column" fxFlex="39" fxLayoutAlign="center" fxFlexOrder.xs="1">
+            <div class="mat-display-1">Our Mission</div>
+            <div class="mat-caption">With our first product, our mission is to reduce thefts, shrinkage and property damage by at least 70%. We know how much hard work retail stores and home owners put in building what they’ve built and seeing people steal and damage their property and goods is a real shame. With RedEye our mission is to upgrade their traditional security systems for a more enhanced approach.</div>
+        </div>
+    </div>
+
+    <!----Fifth content---->
+    <div class="Fifth" fxLayout="column" fxLayoutAlign="none center">
+        <mat-card class="card">
+            <div fxLayout fxLayout.xs="column">
+                <img src="assets/card_img.jpeg" src.xs="assets/card_img.jpeg" id="card_img">
+                <div class="text" fxLayout="column" fxLayoutAlign="end">
+                    <div><img src="assets/quotes1.png" class="quotes"></div>
+                    <div class="mat-caption1">
+                        Technology is the future and when backed with art to sell for good, you can create wonders! 
+                    </div>
+                    <div fxLayout fxLayoutAlign="end"><img src="assets/quotes2.png" class="quotes"></div>
+                    <div class="mat-caption2" style="margin-top: 14.75rem;">
+                        Harsh Mody<br>
+                        Founder & CEO
+                    </div>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+</div>

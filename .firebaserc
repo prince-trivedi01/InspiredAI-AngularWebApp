@@ -1,0 +1,15 @@
+{
+  "targets": {
+    "inspired-ai": {
+      "hosting": {
+        "insipiredai": [
+          "inspired-ai"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "inspired-ai-redeye",
+    "inspiredai-live": "inspired-ai-redeye"
+  }
+}

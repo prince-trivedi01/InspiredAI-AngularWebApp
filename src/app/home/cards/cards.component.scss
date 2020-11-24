@@ -1,0 +1,232 @@
+.row{
+    margin-top: 20rem;
+    overflow: auto;
+    width: 100%;
+}
+
+.left{
+    width: 50%;
+    height: 55rem;
+    position: relative;
+}
+
+.left2{
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+    height: 35rem;
+    position: relative;
+}
+
+.right{
+     width: 50%;
+     height: 55rem;
+     position: relative;
+}
+
+.right2{
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+    height: 35rem;
+    position: relative;
+}
+
+#bucket{
+    margin-right: 5rem;
+    margin-top: 5rem;
+    float: right;
+    width: 24rem;
+    height: 35rem;
+}
+
+#bucket2,
+#home2{
+    margin-top: 5rem;
+    width: 80%;
+    margin: auto;
+}
+
+#home{
+    margin-left: 5rem;
+    margin-top: 5rem;
+    float: left;
+    width: 24rem;
+    height: 35rem;
+
+}
+
+#cardsopen1{
+    position: absolute;
+    float: right;
+    width: 44rem;
+    height: 30rem;
+    right: 0rem;
+    top: 15rem;
+}
+
+#cardsopen12,
+#cardsopen22{
+    position: relative;
+    width: 120%;
+    height: 28rem;
+    top: 5rem;
+    margin-left: 50%;
+    right: 60%;
+}
+
+#cardsopen2{
+    position: absolute;
+    float: left;
+    width: 44rem;
+    height: 30rem;
+    left: 0rem;
+    top: 15rem;
+}
+
+#bucketopen{
+    position: absolute;
+    top: -5rem;
+    right: 2.5rem;
+    width: 37rem;
+    height: 54rem;
+}
+
+#bucketopen2{
+    position: absolute;
+    top: 5%;
+    margin-left: 50%;
+    right: 22.5%;
+    width: 55%;
+}
+
+#homeopen2{
+    position: absolute;
+    top: 4%;
+    margin-left: 50%;
+    right: 22.5%;
+    width: 55%;
+}
+
+#homeopen{
+    position: absolute;
+    top: -5rem;
+    left: 4rem;
+    width: 37rem;
+    height: 54rem;
+}
+
+.heading1 {
+    position: absolute;
+    width: 30rem;
+    top: 26rem;
+    right: 7rem;
+    font-family: roboto-regular;
+    font-weight: bold;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.heading12 {
+    position: absolute;
+    width: 70%;
+    top: 39%;
+    margin-left: 50%;
+    right: 15%;
+    font-family: roboto-regular;
+    font-weight: bold;  
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.heading22 {
+    position: absolute;
+    width: 70%;
+    top: 41%;
+    margin-left: 50%;
+    right: 15%;
+    font-family: roboto-regular;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.heading2 {
+    position: absolute;
+    width: 30rem;
+    top: 26rem;
+    left: 7rem;
+    font-family: roboto-regular;
+    font-weight: bold;
+    //font-size: 1.6rem;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.content1{
+    position: absolute;
+    width: 22.8rem;
+    top: 29rem;
+    right: 10.6rem;
+    line-height: 1.6rem;
+    font-family: roboto-regular;
+    font-size: 1.18rem;
+    text-align: justify;
+}
+
+.content12{
+    position: absolute;
+    width: 53%;
+    top: 46%;
+    margin-left: 50%;
+    right: 23.5%;
+    font-family: roboto-regular;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.content2{
+    position: absolute;
+    width: 22.8rem;
+    top: 29rem;
+    left: 10.6rem;
+    line-height: 1.6rem;
+    font-family: roboto-regular;
+    font-size: 1.18rem;
+    text-align: justify;
+}
+
+.arrow-btn1{
+    position: absolute;
+    width: 44rem;
+    top: 35rem;
+    right: 0rem;
+    background: transparent;
+    outline: none;
+    border-color: transparent;
+    box-shadow: none;
+    text-decoration: none ;
+}
+
+.arrow-btn12{
+    position: absolute;
+    width: 100%;
+    top: 70%;
+    right: 0rem;
+    background: transparent;
+    outline: none;
+    border-color: transparent;
+    box-shadow: none;
+    text-decoration: none ;
+}
+.arrow-btn2{
+    position: absolute;
+    width: 44rem;
+    top: 35rem;
+    left: 0rem;
+    background: transparent;
+    outline: none;
+    border-color: transparent;
+    box-shadow: none;
+    text-decoration: none ;
+}

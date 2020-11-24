@@ -1,0 +1,74 @@
+<!-- <div class="row" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" 
+fxLayoutAlign="space-around center" fxLayoutAlign.xs="space-around center" fxLayoutAlign.sm="space-around center">
+    <div class="left" >
+        <img *ngIf="!changecard1" id="bucket" src="assets/bucket.png" (mouseover)="changecard1=true" >
+        <img *ngIf="changecard1" id="cardsopen1" src="assets/cardclose.png" (click)="firstCardClicked()" (mouseout)="changecard1=false">
+        <img *ngIf="changecard1" id="bucketopen" src="assets/bucket.png" (click)="firstCardClicked()">
+        <p *ngIf="changecard1" class="heading1" (click)="firstCardClicked()">Retail security software</p>
+        <p *ngIf="changecard1" class="content1" (click)="firstCardClicked()">Lorem ipsum dolor sit amet, consetetur lilili
+            sadipscing elitr, sed diam nonumy eirmodlil
+            tempor invidunt ut labore et dolore magnall</p>
+        <button *ngIf="changecard1" class="arrow-btn1" (click)="firstCardClicked()"><img src="assets/arrow-top.png"></button>
+    </div>
+    <div class="right">
+        <img *ngIf="!changecard2" id="home" src="assets/home.png" (mouseover)="changecard2=true" >
+        <img *ngIf="changecard2" id="cardsopen2" src="assets/cardclose.png" (click)="secondCardClicked()" (mouseout)="changecard2=false">
+        <img *ngIf="changecard2" id="homeopen" src="assets/home.png" (click)="secondCardClicked()">
+        <p *ngIf="changecard2" class="heading2" (click)="secondCardClicked()">Home security software</p>
+        <p *ngIf="changecard2" class="content2" (click)="secondCardClicked()">Lorem ipsum dolor sit amet, consetetur lilili
+            sadipscing elitr, sed diam nonumy eirmodlil
+            tempor invidunt ut labore et dolore magnall</p>
+        <button *ngIf="changecard2" class="arrow-btn2" (click)="secondCardClicked()"><img src="assets/arrow-top.png"></button>
+    </div>
+</div> -->
+
+<!-- Desktop View -->
+<div *ngIf="!devicexs && !devicesm" class="row" fxLayout="row" fxLayoutAlign="space-around center">
+    <div class="left" >
+        <img *ngIf="!changecard1" id="bucket" src="assets/bucket.png" (mouseover)="changecard1=true" >
+        <img *ngIf="changecard1" id="cardsopen1" src="assets/cardclose.png" (click)="firstCardClicked()" (mouseout)="changecard1=false">
+        <img *ngIf="changecard1" id="bucketopen" src="assets/bucket.png" (click)="firstCardClicked()">
+        <p *ngIf="changecard1" class="heading1" (click)="firstCardClicked()">Retail security software</p>
+        <p *ngIf="changecard1" class="content1" (click)="firstCardClicked()">We excel in making retail security softwares that detect thefts, shoplifting, property damage and break in within seconds.</p>
+        <button *ngIf="changecard1" class="arrow-btn1" (click)="firstCardClicked()"><img src="assets/arrow-top.png"></button>
+    </div>
+    <div class="right">
+        <img *ngIf="!changecard2" id="home" src="assets/home.png" (mouseover)="changecard2=true" >
+        <img *ngIf="changecard2" id="cardsopen2" src="assets/cardclose.png" (click)="secondCardClicked()" (mouseout)="changecard2=false">
+        <img *ngIf="changecard2" id="homeopen" src="assets/home.png" (click)="secondCardClicked()">
+        <p *ngIf="changecard2" class="heading2" (click)="secondCardClicked()">Home security software</p>
+        <p *ngIf="changecard2" class="content2" (click)="secondCardClicked()">Home security softwares will help you stay at work in peacyr. Leave it to us to detect package thefts, break ins, property damages and thefts.</p>
+        <button *ngIf="changecard2" class="arrow-btn2" (click)="secondCardClicked()"><img src="assets/arrow-top.png"></button>
+    </div>
+</div>
+
+<div *ngIf="devicexs || devicesm">
+    <!-- <div class="left2">
+        <img *ngIf="!changecard1" style="float: center; margin-right: -1rem; width: 100%;" id="bucket" src="assets/bucket.png" (click)="changecard1=true" >
+        <img *ngIf="changecard1" style="float: center; margin-right: -2rem; width: 120%; top: 8rem;" id="cardsopen1" src="assets/cardclose.png" (click)="firstCardClicked()" (mouseout)="changecard1=false">
+        <img *ngIf="changecard1" style="float: center; margin-right: -2.5rem; width: 22rem; height: 32rem; margin-top: 5rem;" id="bucketopen" src="assets/bucket.png" (click)="firstCardClicked()">
+        <p *ngIf="changecard1" style="float: center; width: 100%; top: 18rem; font-size: 1.4rem; right: 0.3rem;" 
+        class="heading1" (click)="firstCardClicked()">Retail security software</p>
+        <p *ngIf="changecard1" style="float: center; width: 64%; top: 20rem; font-size: 1rem; right: 4.4rem;" class="content1" (click)="firstCardClicked()">Lorem ipsum dolor sit amet, consetetur lilili
+            sadipscing elitr, sed diam nonumy eirmodlil
+            tempor invidunt ut labore et dolore magnall</p>
+        <button *ngIf="changecard1" style="float: center; margin-right: -1rem; width: 120%;" class="arrow-btn1" (click)="firstCardClicked()"><img src="assets/arrow-top.png"></button>
+    </div> -->
+
+    <div class="left2">
+        <img *ngIf="!changecard1" id="bucket2" src="assets/bucket2.png" (click)="changecard1=true" >
+        <img *ngIf="changecard1" id="cardsopen12" src="assets/cardclose.png" (click)="firstCardClicked()" (mouseout)="changecard1=false">
+        <img *ngIf="changecard1" id="bucketopen2" src="assets/bucket2.png" (click)="firstCardClicked()">
+        <p *ngIf="changecard1" class="heading12" (click)="firstCardClicked()">Retail security software</p>
+        <p *ngIf="changecard1" class="content12" (click)="firstCardClicked()">We excel in making retail security softwares that detect thefts, shoplifting, property damage and break in within seconds.</p>
+        <button *ngIf="changecard1" class="arrow-btn12" (click)="firstCardClicked()"><img src="assets/arrow-top.png"></button>
+    </div>
+    <div class="right2">
+        <img *ngIf="!changecard2" id="home2" src="assets/home2.png" (click)="changecard2=true" >
+        <img *ngIf="changecard2" id="cardsopen22" src="assets/cardclose.png" (click)="secondCardClicked()" (mouseout)="changecard2=false">
+        <img *ngIf="changecard2" id="homeopen2" src="assets/home2.png" (click)="secondCardClicked()">
+        <p *ngIf="changecard2" class="heading22" (click)="secondCardClicked()">Home security software</p>
+        <p *ngIf="changecard2" class="content12" (click)="secondCardClicked()">Home security softwares will help you stay at work in peacyr. Leave it to us to detect package thefts, break ins, property damages and thefts.</p>
+        <button *ngIf="changecard2" class="arrow-btn12" (click)="secondCardClicked()"><img src="assets/arrow-top.png"></button>
+    </div>
+</div>

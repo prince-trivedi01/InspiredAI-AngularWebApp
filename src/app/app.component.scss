@@ -1,0 +1,67 @@
+@media screen and (min-resolution: 120dpi) { 
+    mat-sidenav {zoom: 0.8;}
+}
+@media screen and (min-resolution: 144dpi) { 
+    mat-sidenav {zoom: 0.67;}
+}
+.content{
+    background: white;
+}
+mat-sidenav-content{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+mat-sidenav-container{
+    width: 100%;
+    overflow-x: hidden;
+}
+mat-sidenav {
+    margin-top: 7.6rem;
+    width: 75%;
+}
+
+.btn{
+    border-radius: 10px;
+    color: white;
+    background-color: #82E7D6;
+    width: 16rem;
+    height: 3.56rem;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size:1.56rem
+}
+.btn:hover{
+    background-color: #24C3A8 !important;
+    font-size: 1.52rem !important;
+    transition-duration: 0.45s;
+}
+.btn:not(:hover){
+    transition-duration: 0.45s;
+
+}
+.link{
+    color:#788A87;
+}
+.link:active{
+    color:#24C3A8 !important;
+}
+.link2{
+    color:#24262B !important;
+}
+.link1{
+    color: #24C3A8;
+}
+.link1active{
+    color: #20ad96 !important;
+}
+.mat-list-base .mat-list-item, .mat-list-base .mat-list-option{
+    height: 6rem;
+    width: auto;
+    padding-left: 2rem !important;
+    font-size: 1.56rem;
+}
+.mat-list-option:focus, .mat-nav-list .mat-list-item:focus, .mat-action-list .mat-list-item:focus {
+    background: none !important;
+}

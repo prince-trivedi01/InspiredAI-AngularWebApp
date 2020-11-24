@@ -1,0 +1,17 @@
+<!--Second content-->
+<div ngClass="second"
+[ngClass.lt-md]="{'second':false,'secondsm':true}"
+    fxLayout="row" fxLayoutAlign="space-between center"
+    fxLayout.xs="column" fxLayoutGap.xs="4rem">
+    <div fxLayout="column" fxFlex=39  fxLayoutAlign="center" 
+    fxFlex.xs=auto fxLayoutAlign.xs="none center" fxFlexOrder.xs="2">
+        <div class="mat-display-1" >What we do</div>
+        <div class="mat-caption" >At Inspired AI, we develop products based on Artificial Intelligence & Computer Vision. Our first product,
+             'RedEye' is a home and retail security software that can be uploaded on 
+             any CCTV camera system and can detect suspicious behaviour without human interactions</div>
+            <div><button mat-flat-button class="btn" (click)="onClick()">Request a demo</button></div>
+    </div>
+    <div fxFlexOrder.xs="1">
+        <img src="assets/second_img.png" id="image">
+    </div>
+</div>

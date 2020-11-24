@@ -1,0 +1,27 @@
+.carousel-caption {
+  top: 20%;
+  left: 15%;
+  bottom: auto;
+  color: white;
+  text-align: left;
+  h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  p {
+    font-size: 22px;
+  }
+}
+.desktop {
+  .carousel-caption {
+    top: 5%;
+    left: 15%;
+    bottom: auto;
+    color: white;
+    text-align: left;
+    h1 {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
